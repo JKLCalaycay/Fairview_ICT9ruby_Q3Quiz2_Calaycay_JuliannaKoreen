@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+	<title>Q3QUIZ2</title>
+
+	<style>
+
+		.rounded {
+
+			text-align: center;
+	        font-size: 20px;
+	        background-color: black;
+	        width: 1250PX;
+	        padding: 100px;
+	        margin: auto;
+	        color: #13274F;
+	        border: 5px solid; color: darkgoldenrod;
+		}
+
+		body {
+			background-image: url(https://img.pikbest.com/ai/illus_our/20230427/cfbbe0f4ba0aa9e840214222031f2d93.jpg!w700wp);
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: monospace;
+		}
+
+		h1 {
+			font-weight: bolder;
+			font-family: fantasy;
+		}
+
+	</style>
+</head>
+
+<body>
+
+<center>
+
+	<br><br>
+
+
+
+<div class="rounded">
+
+	<h1>Ticketing Center 🎞️</h1>
+
+	<br>
+
+	<details ontoggle="message()">
+
+		<summary>Personal Information 𖤓</summary>
+		<i id="show"></i>
+
+	</details>
+
+<form>
+	<label>Name:</label>
+	<input type="text" id="person" class="form-control">
+	<br>
+    <label>Email Address:</label>
+    <input type="email" id="email" class="form-control">
+    <br>
+    <button type="submit" class="btn btn-light" onclick="message3()">Submit</button>
+</form>
+
+	<br>
+
+
+    <details ontoggle="girl()">
+
+		<summary>Ticket Pricing 𖤓</summary>
+		<i id="ticket"></i>
+
+    </details>
+
+
+<form>
+
+   <br>
+ <label>How many tickets?</label> 
+	<select class="form-select" id="Show">
+	<option value="none">Choose</option>
+	<option value="1">1 Ticket</option>
+	<option value="2">2 Tickets</option>
+	<option value="3">3 Tickets</option>
+	<option value="4">4 Tickets</option>
+	<option value="5">5 Tickets</option>
+	<option value="6">6 Tickets</option>
+   </select>
+
+   <br>
+
+ <label>Which Cinema?</label> 
+	<select class="form-select" id="woop">
+	<option value="none">Choose</option>
+	<option value="700">V.I.P Cinema</option>
+	<option value="550">Directors Lounge</option>
+	<option value="350">General Cinema</option>
+   </select>
+ </form>
+
+<script>
+	function showValue(){
+		var showMe = document.getElementById("Show").value;
+
+		var value1 = document.getElementById("woop").value;
+
+			var hello = showMe * value1;
+
+		window.alert("Your total will be " + hello + " PHP, please proceed to the next part below!");
+	}
+
+	/*
+		sir this is whre i had tje hardest time coding in.
+		This statement creates an alert button that pops up when you click a certain button
+*/
+
+    </script>
+
+    <br><br>
+
+    <button type="Submit" class="btn btn-light" onclick="showValue()">Show Price</button>
+
+    <br>
+
+</form> 
+
+    <br>
+
+    <details ontoggle="ticketcopy()">
+
+		<summary>Ticket Copy 𖤓</summary>
+		<i id="copy"></i>
+
+	</details>
+
+<br>
+
+	<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/cinema-ticket-template-design-c4dba0cdf15bd40c380d57390df2e76e_screen.jpg?ts=1737426754">
+
+	<br><br><br>
+
+	 <button type="Submit" class="btn btn-light" onclick="printticket()">Print Ticket</button>
+
+	<br><br>
+
+
+	<script>
+
+		function message(){
+		document.getElementById("show").innerHTML="Fill out the form below!";
+	}
+
+		function second(){
+		document.getElementById("ticket").innerHTML="Check the ticket pricings!";
+	}
+
+		function message3(){
+			var name = document.getElementById("person").value;
+
+		window.alert("Thank you! " + name + "! Please choose your ticket down below!");
+	}
+
+		function ticketcopy(){
+		document.getElementById("copy").innerHTML="Send your ticket to your email!";
+	}
+
+	function printticket(){
+
+		window.alert("Ticket copy has been sent to your email! Thank you so much for purchasing!");
+	}
+
+	</script>
+</div>
+
+<br><br>
+
+<a href="https://docs.google.com/document/d/1QRYNVkw0qRN-XjwFhZ23nF2B-ZCJdVLCKrkAmdD4pRA/edit?usp=sharing">References</a>
+
+</center>
+
+
+
+</body>
+</html>
